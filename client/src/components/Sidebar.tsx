@@ -19,26 +19,26 @@ export default function Sidebar() {
           <ul className="space-y-1">
             <li>
               <Link href="/">
-                <a className={`flex items-center px-4 py-2 text-gray-700 rounded-md hover:bg-gray-100 ${location === '/' ? 'bg-gray-100' : ''}`}>
+                <div className={`flex items-center px-4 py-2 text-gray-700 rounded-md hover:bg-gray-100 ${location === '/' ? 'bg-gray-100' : ''} cursor-pointer`}>
                   <i className="ri-dashboard-line mr-3 text-primary"></i>
                   Dashboard
-                </a>
+                </div>
               </Link>
             </li>
             <li>
               <Link href="/editor">
-                <a className={`flex items-center px-4 py-2 text-gray-700 rounded-md hover:bg-gray-100 ${location === '/editor' ? 'bg-gray-100' : ''}`}>
+                <div className={`flex items-center px-4 py-2 text-gray-700 rounded-md hover:bg-gray-100 ${location === '/editor' ? 'bg-gray-100' : ''} cursor-pointer`}>
                   <i className="ri-add-line mr-3 text-primary"></i>
                   New Blog
-                </a>
+                </div>
               </Link>
             </li>
             <li>
               <Link href="/blogs">
-                <a className={`flex items-center px-4 py-2 text-gray-700 rounded-md hover:bg-gray-100 ${location.startsWith('/blogs') ? 'bg-gray-100' : ''}`}>
+                <div className={`flex items-center px-4 py-2 text-gray-700 rounded-md hover:bg-gray-100 ${location.startsWith('/blogs') ? 'bg-gray-100' : ''} cursor-pointer`}>
                   <i className="ri-file-list-3-line mr-3 text-primary"></i>
                   All Blogs
-                </a>
+                </div>
               </Link>
             </li>
           </ul>
